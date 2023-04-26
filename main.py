@@ -13,7 +13,7 @@ todos = functions.get_todos()
 
 st.title("My To Do app")
 st.subheader("This is my amazing app.")
-st.write("This app increase your productivity")
+st.write("This app increase your <b>productivity</b>", unsafe_allow_html=True)
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
